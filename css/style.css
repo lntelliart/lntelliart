@@ -1,131 +1,156 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
 * {
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
+    font-family: 'Gotham', sans-serif;
+}
+body{
+    background-image: url(/img/beautiful-purple-universe-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
 }
 
 
-.cabecalho {    
+.cabecalho{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    background-color: #e5e7eb;
-    border-bottom: #1d4ed8 solid 1px;
+    flex-direction: row;
+    align-items: center;
     height: 10vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.950);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.37);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.cabecalho-items{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 60vw;
-}
-
-.logo{    
-    width: 5vw;
-}
-
-.cart{
-    height: 4vh;
-}
-
-.search-bar{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;    
-    border-radius: 20px;
-    width: 40vw;
-}
-
-.search-box{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px;
-    gap: 10px;
-}
-
-input{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.material-symbols-outlined{
-    color: #f1f5f9;
-    background-color: #1d4ed8;
-    padding: 10px;
-    border-radius: 100%;
-}
-
-.conteudo{
+main{
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     height: 80vh;
-    background-color: #f3f4f6;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.950);
+    backdrop-filter: blur(5px);
 }
 
-.card-box{
-    display: flex;
+.cards{
+    display: flex;    
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 500px;
+    border: 1px solid white;
+    overflow:auto
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
     height: 400px;
-    background-color: lightgray;
-    border-radius: 20px;
+    background-color: rgba(5, 5, 5, 0.137);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.055);
+    border-radius: 15px;
+}
+ 
+.swiper-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 600px;
+    padding: 50px;
+}
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.card-box-content{
+.swiper-slide{
     display: flex;
+    justify-content: center;
     flex-direction: row;
+}
+  
+.card{
+    width: 20%;
+}
+  
+.card img{
+    
+    width: 100%;
+}
+
+img{
+    border-radius: 15px 0px 0px 15px;
+}
+
+.imgbox{
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 350px;
-    background-color: gray;
-    border-radius: 10px;
+    width: 50%;
+    height: 100%;
 }
 
-.card-box-content-itens{
+.descript-price{
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 450px;
-    height: 350px;
-    background-color: gray;
-    border-radius: 10px;
+    align-items: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 20px;
 }
 
-.libras{
+.name{
+    color: white;
+}
+
+.descrip{
+    margin-right: 50px;  
+    color: white;
+}
+
+.icons{
     display: flex;
-    justify-content: end;
-    background-color: #f3f4f6;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
 }
 
-.menu{
+.fa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: left;
+}
+
+.rodape{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     height: 10vh;
-    background-color: #e5e7eb;
-    border-top: #1d4ed8 solid 1px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.37);
 }
 
-.menu-items{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    
-    gap: 25vw;
-}
+
+
