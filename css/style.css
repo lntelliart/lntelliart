@@ -73,9 +73,31 @@ input{
     align-items: center;
 }
 
-.title{
+.after-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     font-size: 40px;
     color: white;    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 40px;
+    color: white;    
+}
+
+.acess{
+    margin-left: 80%;    
+    position: fixed;
+}
+
+h1{
+    font-size: 30px;
 }
 
 main{
