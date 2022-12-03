@@ -1,23 +1,13 @@
-import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'pagedart.com';
 
-var mySwiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + '+' + q.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination"
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar"
-  }
-});
+f.addEventListener('submit', submitted);
