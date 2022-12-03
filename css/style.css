@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.cabecalho {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    border-bottom: #1d4ed8 solid 1px;
+    height: 10vh;
+}
+
+.cabecalho-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 60vw;
+}
+
+.logo{    
+    width: 5vw;
+}
+
+.cart{
+    height: 4vh;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;    
+    border-radius: 20px;
+    width: 40vw;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.material-symbols-outlined{
+    color: #f1f5f9;
+    background-color: #1d4ed8;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+    background-color: #f3f4f6;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.card-box-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.card-box-content-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.libras{
+    display: flex;
+    justify-content: end;
+    background-color: #f3f4f6;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #e5e7eb;
+    border-top: #1d4ed8 solid 1px;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 25vw;
+}
