@@ -79,7 +79,11 @@ input{
     flex-direction: row;
     align-items: center;
     font-size: 40px;
-    color: white;    
+    color: white;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.720);
+    backdrop-filter: blur(5px);    
 }
 
 .title{
@@ -88,7 +92,8 @@ input{
     flex-direction: row;
     align-items: center;
     font-size: 40px;
-    color: white;    
+    color: white;
+    cursor: pointer; 
 }
 
 .acess{
@@ -108,7 +113,7 @@ main{
     height: 80vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.720);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);    
 }
 
 ::-webkit-scrollbar {
@@ -138,12 +143,14 @@ main{
     align-items: center;
     width: 100%;
     overflow: auto;
+    
 }
 
 .cards{
     display: flex;    
     flex-direction: row;
     align-items: center;  
+    
 }
 
 
@@ -183,9 +190,23 @@ main{
 .card{
     width: 20%;
 }
+
+.card-compra{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(5, 5, 5, 0.137);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.055);
+    border-radius: 15px;
+    background-image: url(/img/cidras.jpg);
+    background-repeat: no-repeat;
+}
   
-.card img{
-    
+.card img{    
     width: 100%;
 }
 
@@ -208,7 +229,7 @@ img{
     align-items: left;
     width: 50%;
     height: 100%;
-    margin-left: 20px;
+    padding: 25px;
 }
 
 .name{
@@ -216,7 +237,6 @@ img{
 }
 
 .descrip{
-    margin-right: 50px;  
     color: white;
 }
 
@@ -225,7 +245,23 @@ img{
     justify-content: center;
     flex-direction: column;
     align-items: left;
-    gap: 15px;
+    gap: 15px;    
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    all: unset;
+    color: white;
+    background-color: #F72585;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .fa{
@@ -281,11 +317,5 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    
+    gap: 50px;    
 }
-
-
-
-
-
