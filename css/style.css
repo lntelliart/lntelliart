@@ -1,321 +1,461 @@
-@import url('https://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.cdnfonts.com/css/druk-trial');
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Gotham', sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Druk Wide Trial', sans-serif;
 }
-body{
-    background-image: url(/img/beautiful-purple-universe-background.jpg);
-    background-repeat: no-repeat;
-    background-size: 1920px 1080px;
+.cabecalho{  
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
-
-a{
-    text-decoration: none;
-    color: white;    
-    padding-left: 20px;
+.cabecalho-menu{  
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
 }
-
-nav{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
+.searchbar{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
-
-.material-symbols-outlined{
-    color: white;
-    padding-left: 20px;
+#query, form{
+  all: unset;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  font-size: 10px;
+  height: 30px;
+  width: 400px;
+  border: none;
+  border-radius: 15px;  
+  color: white;
 }
-
-.pesquisar{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+form{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
-
-input{
-    all: unset;
-    padding: 15px;
-    height: 10px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.432);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25); 
+#BTNsearch{
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
-
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.720);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.37);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);    
+.navbar{
+  display: flex;
+  gap: 20px;
 }
-
-.cabecalho-menu{
-    width: 80vw;    
-}
-
-.cabecalho-menu-item{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-}
-
-.after-header{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.720);
-    backdrop-filter: blur(5px);    
-}
-
-.title{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-    cursor: pointer; 
-}
-
-.acess{
-    margin-left: 80%;    
-    position: fixed;
-}
-
-h1{
-    font-size: 30px;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.720);
-    backdrop-filter: blur(5px);    
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-  
-
-::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.021);
-    border-radius: 10px;
-}
-  
-
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.100);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.404);
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(89, 0, 255, 0.37);
-}
-
-.cards-slider{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    overflow: auto;
-    
-}
-
-.cards{
-    display: flex;    
-    flex-direction: row;
-    align-items: center;  
-    
-}
-
-
-.container{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    width: 600px;
-    height: 400px;
-    background-color: rgba(5, 5, 5, 0.137);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.055);
-    border-radius: 15px;
-}
- 
-.swiper-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    height: 600px;
-    padding: 50px;
-}
-.swiper-wrapper{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.swiper-slide{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-  
-.card{
-    width: 20%;
-}
-
-.card-compra{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    width: 500px;
-    height: 500px;
-    background-color: rgba(5, 5, 5, 0.137);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.055);
-    border-radius: 15px;
-    background-image: url(/img/cidras.jpg);
-    background-repeat: no-repeat;
-}
-  
-.card img{    
-    width: 100%;
-}
-
-img{
-    border-radius: 15px 0px 0px 15px;
-}
-
-.imgbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-}
-
-.descript-price{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: left;
-    width: 50%;
-    height: 100%;
-    padding: 25px;
-}
-
-.name{
-    color: white;
-}
-
-.descrip{
-    color: white;
-}
-
 .icons{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: left;
-    gap: 15px;    
+  display: flex;
+  gap: 10px;
+}
+.material-symbols-outlined{
+  color: white;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://wallpapercave.com/wp/wp2555882.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  height: 100vh;
+}
+.card-login-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: flex-start;
+  align-items: center;  
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  height: 500px;
+  width: 500px;
+  max-width: 400px;
+  backdrop-filter: blur(5px);
+}
+.card-login-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.card-login-main{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  color: white;
+}
+.entrar-com-conta{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;  
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.logo{
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.card-login-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.login-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 25px;
+}
+.inputLogin{
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(174, 0, 255);
+}
+.usuario{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.senha{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.botao-login{
+  border: none;
+  height: 35px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(174, 0, 255);
+}
+.card-carrinho-container{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: flex-start;
+  align-items: center;  
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  height: 400px;
+  width: 800px;
+  backdrop-filter: blur(2px);  
+}
+.imagem-carrinho{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 0px 0px 10px;
+}
+.valores{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+}
+.valores-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+.valores-header-itens{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  color: white;
+}
+.valores-main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  gap: 50px;
+  color: white;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.021);
+  backdrop-filter: blur(10px);  
+}
+.valores-div{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.valor-dol{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
 }
 
-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    all: unset;
-    color: white;
-    background-color: #F72585;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+.valorRS{
+  font-size: 0.5em;
 }
 
-.fa{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    text-align: left;
+.valores-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+}
+.btc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
-
-.rodape-itens{    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.404);
-    gap: 10px;
-
+.eth{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
-
-p{
-    font-size: 10px;
+.botao-comprar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-
+.BTNComprar{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 150px;
+  height: 35px;
+  background-color: rgb(174, 0, 255);
+  color: white;
+  border-radius: 10px;
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;  
+  height: 90%;
+  width: 100vw;
+}
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 10px;  
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: flex-start;
+  align-items: center;  
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  height: 500px;
+  max-width: 400px;
+  backdrop-filter: blur(2px);
+}
+img{
+  transition: all 600ms;  
+}
+.imgContainer{
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 70%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.descContainer{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 40%;
+  width: 90%;
+  color: white;
+  font-size: 10px;
+  gap: 15px;  
+}
+.valorContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 15%;
+  width: 100%;  
+  font-size: 50px;  
+}
+.preco{
+  font-size: 15px;
+}
+.vBTC{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  color: white;
+}
+.vBTC:hover{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  color: rgb(174, 0, 255);
+  font-size: 30px;
+  cursor: pointer;
+  transition:all 600ms;
+}
+.vETH{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 30px;
+}
+.vETH:hover{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  color: rgb(174, 0, 255);
+  font-size: 30px;
+  cursor: pointer;
+  transition:all 600ms;
+}
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+}
+.BTNcomprar{
+  border: none;
+  width: 100%;
+  background-color: white;
+  color: rgb(174, 0, 255);
+  border-radius: 0px 0px 10px 10px;  
+  transition:all 600ms;
+}
+.BTNcomprar:hover{
+  background-color: rgb(174, 0, 255);
+  color: white;
+  cursor: pointer;  
+}
 .rodape{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.568);
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 15px 25px rgba(89, 0, 255, 0.37);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
 }
-
+.rodape-itens{    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.404);
+  gap: 5px;
+}
+p{
+  font-size: 10px;
+}
 .rodape-alunos1{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 .rodape-alunos2{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 .alunos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }

@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intelliart</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<meta charset="utf-8">
+	<title>IntelliArt</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="icon" href="/img/SVG/intelliart-logo-b.svg">
 </head>
+
 <body>
-    <header class="cabecalho">
-        <div class="cabecalho-menu">
-            <div class="cabecalho-menu-item">
-                <div class="logo">
-                    <a href="/index.html"><img src="/img/SVG/SVG/intelliart-logo-b.svg" alt="" width="50" class="logo">
-                </div>
-                
-                <nav class="nav">
-                    <a href="/index.html"><span class="material-symbols-outlined">home</span></a>
-                    <a href="/favoritos.html"><span class="material-symbols-outlined">favorite</span></a>
-                    <a href="/carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>
-                </nav>
-            </div>
-        </div>
-        
-    </header>
-    </div> 
+	<div class="container">
+		<header class="cabecalho">
+			<div class="cabecalho-menu">
+				<div class="logo">
+					<a href="/index.html"><img src="/img/SVG/intelliart-logo-b.svg" alt="" width="70" class="intelliart-logo"></a>
+				</div>
 
-    <main>     
-        <div class="card-compra">
-            <div class="card-compra-itens">
-                <div class="descript-price">
-                    <div class="name">
-                        <h2>#14022265</h2>
-                    </div>
-                    <div class="descrip">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusamus, voluptatibus illo ab optio tenetur laboriosam voluptatem porro voluptates, sint, vel odit tempore commodi eos cum. Reiciendis libero sit dolores?</p>
-                    </div>
-                    <div class="icons">
-                        <div class="fa"><i class=" fab fa-ethereum"> 0.97</i></div>
-                        <div class="fa"><i class=" fa-brands fa-bitcoin">0.98</i></div>
-                </div>
-            </div>
-        </div>
-    </main>
+				<div class="searchbar">
+					<form id="form"> 
+						<input type="search" id="query" name="q" placeholder="Search...">
+						<span id="BTNsearch" class="material-symbols-outlined ICONSearch" >search</span>
+					</form>
+				</div>
 
-    <footer class="rodape">
-        <div class="rodape-itens">            
-            <p>desenvolvido por:</p>
-            <div class="alunos">
-                <div class="rodape-alunos1">
-                    <p>Ivan Gabriel Trapp</p>
-                    <p>Gabriel Seroiska Guidini</p>
-                </div>
-    
-                <div class="rodape-alunos2">
-                    <p>Juliano Sant'anna Filho</p>
-                    <p>Leandro Pinheiro Rosa</p>
-                </div>
-            </div>
-            <p>Todos os Direitos Revervados - IntelliArt</p>
-        </div>
-    </footer>
+				<div class="nav-bar">
+					<div class="icons">
+						<a href="/index.html"><span class="material-symbols-outlined">home</span></a>
+						<a href="/favorito.html"><span class="material-symbols-outlined">favorite</span></a>
+						<a href="/conta.html"><span class="material-symbols-outlined">person</span></a>
+						<a href="/carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+					</div>
+				</div>
+			</div>
+		
+		</header>
+	
+		<main>
+			<div class="card-carrinho-container">
+				<div class="foto-carrinho">
+					<img src="/img/art/art1.png" alt="" width="400" class="imagem-carrinho">
+				</div>
+				
+				<div class="valores">
+					<div class="valores-header">
+						<div class="valores-header-itens">
+							<h1>#14023256</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+
+
+					</div>
+
+					<div class="valores-main">
+
+						<div class="valores-div">
+							<div class="btc">
+								<div class="fa"><i class=" fa-brands fa-bitcoin"></i></div>
+								<p class="valorRS">0.97</p>
+							</div>
+							
+							<div class="eth">
+								<div class="fa"><i class=" fab fa-ethereum"></i></div>
+								<p class="valorRS">13,05</p>
+							</div>
+						</div>
+						<div class="valor-dol">
+							<div class="fa"><i class="fa-solid fa-dollar-sign"></i></div>							
+							<P class="valorRS">16.531,05</P>			
+						</div>
+					</div>
+
+					<div class="valores-footer">
+						<div class="botao-comprar">
+							<button class="BTNComprar">comprar</button>
+						</div>
+					</div>
+
+
+					
+				</div>
+			</div>
+		</main>
+		<footer class="rodape">
+			<div class="rodape-itens">            
+				<p>desenvolvido por:</p>
+				<div class="alunos">
+					<div class="rodape-alunos1">
+						<p>Ivan Gabriel Trapp</p>
+						<p>Gabriel Seroiska Guidini</p>
+					</div>
+	
+					<div class="rodape-alunos2">
+						<p>Juliano Sant'anna Filho</p>
+						<p>Leandro Pinheiro Rosa</p>
+					</div>
+				</div>
+				<p>Todos os Direitos Revervados - IntelliArt</p>
+			</div>
+		</footer>		
+	</div>
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+	var swiper = new Swiper('.swiper-container', {	  
+	  slidesPerView: 3,
+      spaceBetween: 20,
+      pagination: {
+    	el: '.swiper-pagination',
+        clickable: true,
+		
+      },
+    });
+	</script>
+
+	<script src="/js/index.js"></script>
+
 
 </body>
+
 </html>
